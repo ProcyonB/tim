@@ -1,0 +1,146 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #F5F9E9;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.first-screen {
+    height: 100vh;
+    background: url("../src/first.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.first-container {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #F5F9E9;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.main-text {
+    margin-top: 13rem;
+}
+
+.first-container h1 {
+    position: relative;
+    display: inline-block;
+}
+
+.first-container h1::after {
+    width: 85%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1rem;
+    background-color: #F5F9E9;
+}
+
+.bottom-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.social {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 2px;
+
+}
+
+.fb {
+    background: url("../src/facebook.svg") no-repeat;
+    background-size: contain;
+}
+
+.vk {
+    background: url("../src/vk.svg") no-repeat;
+    background-size: contain;
+}
+
+.inst {
+    background: url("../src/instagram.svg") no-repeat;
+    background-size: contain;
+}
+
+.youtube {
+    background: url("../src/youtube.svg") no-repeat;
+    background-size: contain;
+}
+
+.slider {
+    min-width: 0;
+    height: 80vh;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    font-size: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: all 0.2s;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: -6rem;
+    background: url("../src/previous.png")no-repeat center center;
+    border: none;
+    background-size: contain;
+    border-radius: 100%;
+    outline: none;
+
+}
+
+.slider .slick-arrow.slick-next {
+    right: -6rem;
+    background: url("../src/next.png") no-repeat center center;
+    background-size: contain;
+    border: none;
+    border-radius: 100%;
+    outline: none;
+}
+
+.slider .slick-arrow:hover {
+    box-shadow: 2px 2px 15px #36453B;
+}
+
+iframe {
+    height: 80vh;
+    /* width: 10rem; */
+    margin: auto;
+}
