@@ -13,6 +13,35 @@
     }
 }
 
+@media (max-width: 660px) {
+    .service {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .slider {
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+        height: auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 485px) {
+    svg {
+        width: 70px;
+    }
+
+    .to_contact {
+        line-height: 30px;
+    }
+}
+
+
+
 @media (max-width: 530px) {
     .slider .slick-arrow {
         width: 3rem;
@@ -37,5 +66,11 @@
 @media (max-width: 485px) {
     .main-text {
         margin-top: 16rem;
+    }
+}
+
+@media (max-width: 305px) {
+    .card {
+        width: 70%;
     }
 }
