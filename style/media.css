@@ -1,3 +1,9 @@
+@media (max-width: 900px) {
+    .contacts {
+        height: 70vh;
+    }
+}
+
 @media (max-width: 690px) {
     .slider .slick-arrow {
         width: 4rem;
@@ -10,6 +16,12 @@
 
     .slider .slick-arrow.slick-next {
         right: -5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .contact-list {
+        margin: 0;
     }
 }
 
@@ -28,18 +40,12 @@
         height: auto;
         width: 50%;
     }
-}
 
-@media (max-width: 485px) {
-    svg {
-        width: 70px;
-    }
-
-    .to_contact {
-        line-height: 30px;
+    .contact-list a,
+    p {
+        font-size: 1.2rem;
     }
 }
-
 
 
 @media (max-width: 530px) {
@@ -57,20 +63,42 @@
     }
 }
 
-@media (max-width: 485px) {
-    html {
-        font-size: 8px;
+@media (max-width: 500px) {
+    .contacts {
+        height: 50vh;
     }
 }
 
 @media (max-width: 485px) {
+    html {
+        font-size: 8px;
+    }
+
+    svg {
+        width: 70px;
+    }
+
+    .to_contact {
+        line-height: 30px;
+    }
+
     .main-text {
         margin-top: 16rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .contact-list {
+        margin-left: 1.7rem;
     }
 }
 
 @media (max-width: 305px) {
     .card {
         width: 70%;
+    }
+
+    .contact-list {
+        margin-left: 2.5rem;
     }
 }
