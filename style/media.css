@@ -2,6 +2,10 @@
     .contacts {
         height: 70vh;
     }
+
+    .about {
+        height: 70vh;
+    }
 }
 
 @media (max-width: 690px) {
@@ -23,12 +27,20 @@
     .contact-list {
         margin: 0;
     }
+
+    .card p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 660px) {
     .service {
         flex-direction: column;
         height: auto;
+    }
+
+    .service-header {
+        margin-bottom: 1rem;
     }
 
     .slider {
@@ -64,7 +76,9 @@
 }
 
 @media (max-width: 500px) {
-    .contacts {
+
+    .contact,
+    .about {
         height: 50vh;
     }
 }
@@ -90,6 +104,16 @@
 @media (max-width: 350px) {
     .contact-list {
         margin-left: 1.7rem;
+    }
+}
+
+@media (max-width: 315px) {
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        margin-right: 15%;
     }
 }
 
