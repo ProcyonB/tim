@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Сессионный барабанщик в Санкт-Петербурге"
+    />
     <title>Tim</title>
     <link rel="shortcut icon" href="src/logo.ico" type="image/x-icon" />
     <link
@@ -17,19 +21,39 @@
     <section class="first-screen">
       <div class="container first-container">
         <div class="main-text wow fadeInDown">
-          <h1>
+          <h1 id="name">
             Tim <br />
             &#8195; Vakhrushev
           </h1>
-          <h2>session drummer</h2>
+          <h2 id="session">session drummer</h2>
         </div>
         <div class="bottom-panel">
-          <h3>ru | eng</h3>
+          <h3>
+            <button class="rus">ru</button> |
+            <button href="" class="eng">eng</button>
+          </h3>
           <div class="social-bar">
-            <a id="header" href="http://" class="social fb" target="_blank"></a>
-            <a href="http://" class="social vk" target="_blank"></a>
-            <a href="http://" class="social inst" target="_blank"></a>
-            <a href="http://" class="social youtube" target="_blank"></a>
+            <a
+              id="header"
+              href="https://www.facebook.com/tim.vakhrushev"
+              class="social fb"
+              target="_blank"
+            ></a>
+            <a
+              href="https://vk.com/timvakh"
+              class="social vk"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.instagram.com/timvakhrushev/"
+              class="social inst"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UC_7dG2_t1u7bGN0FxXSLHmA"
+              class="social youtube"
+              target="_blank"
+            ></a>
           </div>
         </div>
       </div>
@@ -38,45 +62,106 @@
     <section class="container about">
       <div class="about-description wow fadeInLeft">
         <div class="about-text">
-          <h2>About me</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quis
-            quidem accusamus ipsum fuga.Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Non quis quidem accusamus ipsum fuga. Voluptas sit
-            ipsa quos nisi laboriosam.
+          <h2 id="about">About me</h2>
+          <p id="about_text">
+            Hi! My name's Tim & I'm an a session drummer. I really like to play
+            drums. I've been doing this for the past 15 years. I regularly
+            perform at concerts and events. I am a graduate of a Mussorgsky
+            Music College (Saint-Petersburg). I perform music in various styles
+            such as jazz, rock, fusion, latin, pop music. I've played with
+            various bands and artists, such as: Mussorgsky Jazz Orchestra,
+            Lensoviet Theater, Julia Jen, Dmitry Noskov, Gasan Bagirov,
+            Quintessence Band, FSBand and many others.
           </p>
         </div>
       </div>
       <div class="about-img wow fadeInRight"></div>
     </section>
     <!-- слайдер -->
-    <section class="container slider wow fadeIn">
-      <iframe
-        src="https://www.youtube.com/embed/4HOU1QNDJ4Y"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        src="https://www.youtube.com/embed/4HOU1QNDJ4Y"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+    <section class="container-slider slider wow fadeIn">
+      <div class="video video-1">
+        <a class="video__link" href="https://www.youtube.com/embed/4HOU1QNDJ4Y">
+          <picture style="display: none">
+            <!-- <source
+              srcset="
+                https://i.ytimg.com/vi_webp/4HOU1QNDJ4Y/maxresdefault.webp
+              "
+              type="image/webp"
+            /> -->
+            <img
+              class="video__media"
+              src="https://i.ytimg.com/vi/4HOU1QNDJ4Y/maxresdefault.jpg"
+            /> </picture
+        ></a>
+        <button class="video__button" aria-label="Запустить видео">
+          <svg width="68" height="48" viewBox="0 0 68 48">
+            <path
+              class="video__button-shape"
+              d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+            ></path>
+            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="video video-2">
+        <a class="video__link" href="https://www.youtube.com/embed/KdbHP5FOhQo">
+          <picture style="display: none">
+            <!-- <source
+              srcset="
+                https://i.ytimg.com/vi_webp/KdbHP5FOhQo/maxresdefault.webp
+              "
+              type="image/webp"
+            /> -->
+            <img
+              class="video__media"
+              src="https://i.ytimg.com/vi/KdbHP5FOhQo/maxresdefault.jpg"
+            /> </picture
+        ></a>
+        <button class="video__button" aria-label="Запустить видео">
+          <svg width="68" height="48" viewBox="0 0 68 48">
+            <path
+              class="video__button-shape"
+              d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+            ></path>
+            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="video video-3">
+        <a class="video__link" href="https://www.youtube.com/embed/E4HlYMwwh74">
+          <picture style="display: none">
+            <!-- <source
+              srcset="
+                https://i.ytimg.com/vi_webp/E4HlYMwwh74/maxresdefault.webp
+              "
+              type="image/webp"
+            /> -->
+            <img
+              class="video__media"
+              src="https://i.ytimg.com/vi/E4HlYMwwh74/maxresdefault.jpg"
+            /> </picture
+        ></a>
+        <button class="video__button" aria-label="Запустить видео">
+          <svg width="68" height="48" viewBox="0 0 68 48">
+            <path
+              class="video__button-shape"
+              d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+            ></path>
+            <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+          </svg>
+        </button>
+      </div>
     </section>
     <!-- услуги -->
     <section class="container wow fadeIn">
-      <div class="service-header"><h2>My Services</h2></div>
+      <div class="service-header"><h2 id="service">My Services</h2></div>
 
       <div class="service">
         <div class="card">
-          <h2>Live show</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            incidunt.
-          </p>
+          <h2 id="show">Touring & Live Show</h2>
+          <p id="show_text">Ready to offer my best on the road and stage</p>
           <div class="to_contact cont_btn">
-            Contact
+            <span class="contact_btn">Contact</span>
             <svg
               width="85"
               height="30"
@@ -89,13 +174,12 @@
           <!-- <button class="to_contact"></button> -->
         </div>
         <div class="card">
-          <h2>Recording</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            incidunt.
+          <h2 id="record">Studio Sessions</h2>
+          <p id="record_text">
+            Remote recording drums in a wide variety of styles
           </p>
           <div class="to_contact cont_btn">
-            Contact
+            <span class="contact_btn">Contact</span>
             <svg
               width="85"
               height="30"
@@ -107,13 +191,12 @@
           </div>
         </div>
         <div class="card">
-          <h2>Lessons</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            incidunt.
+          <h2 id="lessons">Lessons</h2>
+          <p id="lessons_text">
+            Drum Lessons for beginners and advenced drummers
           </p>
           <div class="to_contact cont_btn">
-            Contact
+            <span class="contact_btn">Contact</span>
             <svg
               width="85"
               height="30"
@@ -162,13 +245,23 @@
       <div class="contact-img wow fadeInLeft"></div>
       <div class="contact-description wow fadeInRight">
         <div class="contact-list">
-          <h2>Contacts</h2>
-          <a href="http://" target="_blank">Vk</a>
-          <a href="http://" target="_blank">Facebook</a>
-          <a href="http://" target="_blank">YouTube</a>
-          <a href="http://" target="_blank"> Instagram</a>
-          <a href="mailto:" target="_blank">tim@gmail.com</a>
-          <a href="tel:+79818809928">89818809928</a> <br />
+          <h2 id="contact">Contacts</h2>
+          <a href="https://vk.com/timvakh" target="_blank">Vk</a>
+          <a href="https://www.facebook.com/tim.vakhrushev" target="_blank"
+            >Facebook</a
+          >
+          <a
+            href="https://www.youtube.com/channel/UC_7dG2_t1u7bGN0FxXSLHmA"
+            target="_blank"
+            >YouTube</a
+          >
+          <a href="https://www.instagram.com/timvakhrushev/" target="_blank">
+            Instagram</a
+          >
+          <a href="mailto:timvahr@gmail.com" target="_blank"
+            >timvahr@gmail.com</a
+          >
+          <br />
           <p>Saint-Petersburg</p>
         </div>
       </div>
@@ -181,11 +274,11 @@
       </p>
     </footer>
 
-    <div class="popup">
+    <div class="popup contact-form">
       <div class="popup-window">
         <button class="close">&times;</button>
-        <h2>Contact me</h2>
-        <form action="">
+        <h2 id="contact_me">Contact me</h2>
+        <form class="form">
           <input
             type="text"
             name="name"
@@ -209,7 +302,7 @@
             required
           ></textarea>
           <button type="submit" class="to_contact">
-            Contact
+            <span class="contact_btn">Contact</span>
             <svg
               width="85"
               height="30"
@@ -220,12 +313,64 @@
             </svg>
           </button>
         </form>
-        <p>or</p>
+        <p id="or">or</p>
         <div class="social-bar">
-          <a id="header" href="http://" class="social fb" target="_blank"></a>
-          <a href="http://" class="social vk" target="_blank"></a>
-          <a href="http://" class="social inst" target="_blank"></a>
-          <a href="http://" class="social youtube" target="_blank"></a>
+          <a
+            href="https://www.facebook.com/tim.vakhrushev"
+            class="social fb"
+            target="_blank"
+          ></a>
+          <a
+            href="https://vk.com/im?sel=11547946"
+            class="social vk"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.instagram.com/timvakhrushev/"
+            class="social inst"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UC_7dG2_t1u7bGN0FxXSLHmA"
+            class="social youtube"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="popup send-popup">
+      <div class="popup-window send">
+        <button class="close">&times;</button>
+        <div class="send-img"></div>
+        <h3 class="send-text">Сообщение получено, спасибо!</h3>
+      </div>
+    </div>
+    <div class="popup error-popup">
+      <div class="popup-window send error">
+        <button class="close">&times;</button>
+        <div class="error-img"></div>
+        <h3 class="error-text">Что-то пошло не так, попробуйте позже</h3>
+        <div class="social-bar">
+          <a
+            href="https://www.facebook.com/tim.vakhrushev"
+            class="social fb"
+            target="_blank"
+          ></a>
+          <a
+            href="https://vk.com/im?sel=11547946"
+            class="social vk"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.instagram.com/timvakhrushev/"
+            class="social inst"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UC_7dG2_t1u7bGN0FxXSLHmA"
+            class="social youtube"
+            target="_blank"
+          ></a>
         </div>
       </div>
     </div>
@@ -234,6 +379,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/video.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,39 +1,18 @@
-@media (max-width: 900px) {
-    .contacts {
-        height: 70vh;
+@media(min-width: 1500px) {
+    html {
+        font-size: 13px;
     }
+}
 
+@media (max-width: 900px) {
+
+    .contacts,
     .about {
         height: 70vh;
     }
 }
 
-@media (max-width: 690px) {
-    .slider .slick-arrow {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    .slider .slick-arrow.slick-prev {
-        left: -5rem;
-    }
-
-    .slider .slick-arrow.slick-next {
-        right: -5rem;
-    }
-}
-
-@media (max-width: 680px) {
-    .contact-list {
-        margin: 0;
-    }
-
-    .card p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 660px) {
+@media(max-width:1060px) {
     .service {
         flex-direction: column;
         height: auto;
@@ -53,12 +32,57 @@
         width: 50%;
     }
 
-    .contact-list a,
-    p {
-        font-size: 1.2rem;
+    .contact-list {
+        margin-left: 0;
     }
 }
 
+@media (max-width: 760px) {
+    .about-text {
+        max-width: 60%;
+        margin-right: 25%;
+    }
+}
+
+@media (max-width: 690px) {
+    .slider .slick-arrow {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .slider .slick-arrow.slick-prev {
+        left: -5rem;
+    }
+
+    .slider .slick-arrow.slick-next {
+        right: -5rem;
+    }
+}
+
+@media (max-width: 680px) {
+
+
+    .card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .contact-list {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .video,
+    .slider {
+        height: 50vh;
+    }
+}
 
 @media (max-width: 530px) {
     .slider .slick-arrow {
@@ -77,9 +101,9 @@
 
 @media (max-width: 500px) {
 
-    .contact,
+    .contacts,
     .about {
-        height: 50vh;
+        height: 60vh;
     }
 }
 
@@ -99,11 +123,39 @@
     .main-text {
         margin-top: 16rem;
     }
+
+    .about-img {
+        height: 50%;
+        width: 45%;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-img {
+        width: 50%;
+        height: 50%;
+    }
+
+
+
+}
+
+@media (max-width: 362px) {
+    .about-text {
+        margin-right: 15%;
+        max-width: 70%;
+    }
 }
 
 @media (max-width: 350px) {
+
+    .contact-list a,
+    .contact-list p {
+        font-size: 1rem;
+    }
+
     .contact-list {
-        margin-left: 1.7rem;
+        margin-left: 20%;
     }
 }
 
@@ -115,6 +167,8 @@
     .about-text {
         margin-right: 15%;
     }
+
+
 }
 
 @media (max-width: 305px) {
@@ -122,7 +176,9 @@
         width: 70%;
     }
 
-    .contact-list {
-        margin-left: 2.5rem;
+
+
+    .about-text p {
+        font-size: 0.8rem;
     }
 }
