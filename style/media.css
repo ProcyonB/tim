@@ -32,6 +32,11 @@
         width: 50%;
     }
 
+    .card img {
+        width: 20%;
+        height: 20%;
+    }
+
     .contact-list {
         margin-left: 0;
     }
@@ -56,6 +61,11 @@
 
     .slider .slick-arrow.slick-next {
         right: -5rem;
+    }
+
+    .card img {
+        width: 30%;
+        height: 30%;
     }
 }
 

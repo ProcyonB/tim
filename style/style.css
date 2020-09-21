@@ -72,10 +72,12 @@ html {
   font-size: 1.8rem;
   font-weight: bold;
   outline: none;
+  transition: 0.2s;
 }
 
 .bottom-panel button:hover {
   cursor: pointer;
+  color: #e84f76;
 }
 
 .social {
@@ -88,20 +90,44 @@ html {
 .fb {
   background: url("../src/facebook.svg") no-repeat;
   background-size: contain;
+  transition: 0.2s;
+}
+
+.first-screen .fb:hover {
+  background: url("../src/facebook_pink.svg") no-repeat;
+  background-size: contain;
 }
 
 .vk {
   background: url("../src/vk.svg") no-repeat;
+  background-size: contain;
+  transition: 0.2s;
+}
+
+.first-screen .vk:hover {
+  background: url("../src/vk_pink.svg") no-repeat;
   background-size: contain;
 }
 
 .inst {
   background: url("../src/instagram.svg") no-repeat;
   background-size: contain;
+  transition: 0.2s;
+}
+
+.first-screen .inst:hover {
+  background: url("../src/instagram_pink.svg") no-repeat;
+  background-size: contain;
 }
 
 .youtube {
   background: url("../src/youtube.svg") no-repeat;
+  background-size: contain;
+  transition: 0.2s;
+}
+
+.first-screen .youtube:hover {
+  background: url("../src/youtube_pink.svg") no-repeat;
   background-size: contain;
 }
 
@@ -413,7 +439,7 @@ html {
 .card {
   background-color: #f5f9e9;
   width: 30%;
-  height: 17rem;
+  height: 60%;
   padding: 1.6rem;
   box-shadow: 0px 4px 6px #36453b;
   border-radius: 1rem;
@@ -422,12 +448,19 @@ html {
   transition: all 0.3s;
 }
 
+.card img {
+  width: 30%;
+  height: 30%;
+}
+
 .card p {
   font-size: 1.3rem;
 }
 
 .card h2 {
   text-decoration: underline;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .card:hover {
